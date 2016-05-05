@@ -34,11 +34,11 @@
     </style>
 
     <style name="SuperuserLight" parent="@style/AppTheme">
-        <item name="android:colorPrimary">@color/holo_blue_light</item>
-        <item name="android:colorPrimaryDark">@color/holo_blue_dark</item>
-        <item name="android:colorAccent">@color/holo_blue_bright</item>
+        <item name="android:colorPrimary">@color/material_blue_grey_900</item>
+        <item name="android:colorPrimaryDark">@color/material_blue_grey_950</item>
+        <item name="android:colorAccent">@color/material_deep_teal_500</item>
 
-        <item name="bottomButtonBar">@color/holo_blue_dark</item>
+        <item name="bottomButtonBar">@color/material_blue_grey_950</item>
         <item name="bottomButtonBarText">?android:attr/textColorPrimaryInverse</item>
         
         <item name="toggleIcon">@drawable/ic_toggle</item>
