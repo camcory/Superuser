@@ -44,7 +44,7 @@ public class AboutFragment extends BetterListFragment {
             public void onClick(View view) {
                 super.onClick(view);
                 Intent i = new Intent();
-                i.setData(Uri.parse("market://details?id=com.koushikdutta.superuser"));
+                i.setData(Uri.parse("https://github.com/camcory/Superuser"));
                 startActivity(i);
             }
         });
@@ -67,7 +67,7 @@ public class AboutFragment extends BetterListFragment {
         });
 
         final String uri = "http://github.com/koush/Superuser";
-        addItem(R.string.about, new ListItem(this, "Github", uri, R.drawable.github) {
+        addItem(R.string.about, new ListItem(this, "Original Github source", uri, R.drawable.github) {
             @Override
             public void onClick(View view) {
                 super.onClick(view);
@@ -77,13 +77,12 @@ public class AboutFragment extends BetterListFragment {
                 startActivity(i);
             }
         });
-
-        addItem(R.string.apps, new ListItem(this, "ROM Manager", "The ultimate backup, restore, and ROM installation tool", R.drawable.clockwork512) {
+        addItem(R.string.apps, new ListItem(this, "AllCast", "Send photos, music, and videos on your Android to your TV", R.drawable.allcast) {
             @Override
             public void onClick(View view) {
                 super.onClick(view);
                 Intent i = new Intent();
-                i.setData(Uri.parse("market://details?id=com.koushikdutta.rommanager"));
+                i.setData(Uri.parse("market://details?id=com.koushikdutta.cast"));
                 startActivity(i);
             }
         });
@@ -96,21 +95,21 @@ public class AboutFragment extends BetterListFragment {
                 startActivity(i);
             }
         });
-        addItem(R.string.apps, new ListItem(this, "DeskSMS", "Seamlessly text message from your email, browser, or instant messenger", R.drawable.desksms) {
-            @Override
-            public void onClick(View view) {
-                super.onClick(view);
-                Intent i = new Intent();
-                i.setData(Uri.parse("market://details?id=com.koushikdutta.desktopsms"));
-                startActivity(i);
-            }
-        });
         addItem(R.string.apps, new ListItem(this, "Tether", "Use your phone's web connection on a laptop or PC", R.drawable.tether) {
             @Override
             public void onClick(View view) {
                 super.onClick(view);
                 Intent i = new Intent();
                 i.setData(Uri.parse("market://details?id=com.koushikdutta.tether"));
+                startActivity(i);
+            }
+        });
+        addItem(R.string.apps, new ListItem(this, "Vysor", "Android control on PC", R.drawable.vysor) {
+            @Override
+            public void onClick(View view) {
+                super.onClick(view);
+                Intent i = new Intent();
+                i.setData(Uri.parse("market://details?id=com.koushikdutta.vysor"));
                 startActivity(i);
             }
         });
